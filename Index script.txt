@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="NafiNEOLife 2.png" type="image/x-icon">
+
+  <meta name="description" content="text/html">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample</title>
+    <style>
+        
+        body {
+          text-align: center;
+          background-color: goldenrod;
+          background-image: url("All Natural Fibre bg.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+          width: initial;
+          height: initial;
+          padding-top: 2px;
+          padding-bottom: 2px;
+          padding-left: 2px;
+          padding-right: 2px;
+          margin-top: 2px;
+          margin-bottom: 0.5px;
+          margin-left: 2px;
+          margin-right: 2px;
+        }
+
+        span.logo {
+          width: auto;
+          height: auto;
+          text-align: center;
+          float: left;
+          background-color: #181818;
+          border-radius: 50px;
+          animation-name: rotate;
+          animation-duration: 2s;
+          animation-direction: alternate;
+          padding-left: 1px;
+          padding-right: 1px;
+          padding-top: 1px;
+          padding-bottom: 1px;
+          margin-left: 1px;
+          margin-right: 1px;
+          margin-top: 1px;
+          margin-bottom: 1px;
+          display: flex;
+        }
+        
+        @keyframes rotate {0% {transform: rotate(0);} 100% {transform: rotate(360deg);}}
+
+        span.buttons {
+           float: right;
+           padding-top: 2%;
+           padding-bottom: 2%;
+           margin-left: 3px;
+           margin-right: 3px;
+           shape-rendering: crispEdges;
+           position: relative;
+           animation-name: mymove;
+           animation-duration: 1s;
+        }
+
+        @keyframes mymove {from {right: 0px;} to {right: 20px;}}
+
+        a.seeing {
+          margin-left: 5px;
+          margin-right: 5px;
+          padding-left: 7px;
+          padding-right: 7px;
+          background-color: #181818;
+          color: white;
+          text-align: center;
+          width: auto;
+          float: right;
+          border-radius: 50px;
+          font-size: 20px;
+          font-family: "Poppins";
+          font-weight: 400;
+        }
+
+        a.seeing:link {
+          text-decoration: none;
+          font-size: 16px;
+          font-family: "Poppins";
+          font-weight: 400;
+          border-radius: 50px;
+        }
+
+        a.seeing:hover {
+          padding-left: 7px;
+          padding-right: 7px;
+          margin-left: 2px;
+          margin-right: 2px;
+          color: black;
+          background-color: green;
+          border-radius: 50px;
+        }
+
+        #myInput {
+          width: initial; /* Full-width */
+          height: initial;
+          text-align: center;
+          font-family: "Poppins";
+          font-weight: 400;
+          font-size: 16px; /* Increase font-size */
+          padding-top: 1px;
+          padding-bottom: 1px;
+          padding-left: 1px;
+          padding-right: 1px; /* Add some padding */
+          border-radius: 20px;
+          margin-top: 1px;
+          margin-bottom: 1px; /* Add some space below the input */
+          margin-left: 1px;
+          margin-right: 1px;
+          border-color: white;
+          border-style: none;
+          background-color: #181818;
+          color: white;
+        }
+
+        h2#koi {
+          background-color: #181818;
+          color: white;
+          font-size: 34px;
+          font-family: "Poppins";
+          font-weight: 400;
+          border-radius: 3px;
+        }
+
+        #myBtnContainer {
+          text-align: center;
+          padding-top: 0.5%;
+          padding-bottom: 0.5%;
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+      
+        /* Style the buttons */
+        .btn {
+          border: none;
+          outline: none;
+          border-radius: 5px;
+          outline: none;
+          padding-top: 1px;
+          padding-bottom: 1px;
+          padding-left: 1px;
+          padding-right: 1px;
+          background-color: white;
+          color: black;
+          font-size: 16px;
+          font-family: "Poppins";
+          font-weight: 400;
+          animation: myfirst 1.5s 1;
+          animation-direction: alternate;
+        }
+
+        @keyframes myfirst {
+          0% { background: darkred; }
+          25% { background: gold; }
+          50% { background: darkblue; }
+          75% { background: green; }
+          100% { background: orangered; }
+        }
+
+        .btn:hover {
+          background-color: red;
+        }
+
+        .btn.active {
+          background-color: green;
+        }
+
+        .container {
+          overflow: hidden;
+          text-align: center;
+          background-color: white;
+          border-radius: 5px;
+          align-content: center;
+          align-self: center;
+          align-items: center;
+        }
+
+        #container2 {
+          overflow: hidden;
+          text-align: center;
+          background-color: #181818;
+          border-radius: 5px;
+          align-content: center;
+          align-self: center;
+          align-items: center;
+          display: inline;
+          margin: auto;
+        }
+
+        #middle {
+          background-color: white;
+          text-align: center;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          margin-top: 0px;
+          margin-bottom: 0px;
+          margin-left: 1px;
+          margin-right: 1px;
+          border-radius: 5px;
+        }
+
+        #myUL2 {
+          padding-top: 1px;
+          padding-bottom: 1px;
+          padding-left: 0px;
+          padding-right: 0px;
+          margin-top: 2px;
+          margin-bottom: 2px;
+          margin-left: 1px;
+          margin-right: 1px;
+          border-radius: 5px;
+          display: flex;
+          text-align: center;
+          background-color: #181818;
+          color: white;
+          overflow: auto;
+          width: auto;
+          height: auto;
+          align-content: center;
+          align-self: center;
+          align-items: center;
+        }
+
+        #myUL {
+          padding-top: 1px;
+          padding-bottom: 1px;
+          padding-left: 0px;
+          padding-right: 0px;
+          margin-top: 2px;
+          margin-bottom: 2px;
+          margin-left: 1px;
+          margin-right: 1px;
+          border-radius: 5px;
+          display: flex;
+          text-align: center;
+          background-color: #181818;
+          color: white;
+          overflow: auto;
+          width: auto;
+          height: auto;
+          align-content: center;
+          align-self: center;
+          align-items: center;
+        }
+
+        .filterDiv {
+          animation: myfirst 1.5s 1;
+          animation-direction: alternate;
+          background-color: goldenrod;
+          color: black;
+          width: auto;
+          height: auto;
+          line-height: 30px;
+          text-align: center;
+          align-self: center;
+          font-family: "Poppins";
+          font-weight: 400;
+          font-size: 16px;
+          padding-top: 0.5%;
+          padding-bottom: 0.5%;
+          padding-left: 0.5%;
+          padding-right: 0.5%;
+          margin-top: 3px;
+          margin-bottom: 3px;
+          margin-left: 2px;
+          margin-right: 2px;
+          border-radius: 5px;
+          display: none; /* Hidden by default */
+        }
+
+        .names {
+          text-align: center;
+          font-size: 16px;
+          color: black;
+        }
+
+        @keyframes myfirst {
+          0% { background: darkred; }
+          25% { background: gold; }
+          50% { background: darkblue; }
+          75% { background: green; }
+          100% { background: orangered; }
+        }
+
+        img.products {
+          animation: shake 0.5s;
+          animation-iteration-count: initial;
+          text-align: center;
+          align-content: center;
+          align-self: center;
+          align-items: center;
+          border-radius: 5px;
+          width: initial;
+        }
+
+        @keyframes shake {
+          0% { transform: translate(1px, 1px) rotate(0deg); }
+          10% { transform: translate(-1px, -2px) rotate(-1deg); }
+          20% { transform: translate(-3px, 0px) rotate(1deg); }
+          30% { transform: translate(3px, 2px) rotate(0deg); }
+          40% { transform: translate(1px, -1px) rotate(1deg); }
+          50% { transform: translate(-1px, 2px) rotate(-1deg); }
+          60% { transform: translate(-3px, 1px) rotate(0deg); }
+          70% { transform: translate(3px, 1px) rotate(-1deg); }
+          80% { transform: translate(-1px, -1px) rotate(1deg); }
+          90% { transform: translate(1px, 2px) rotate(0deg); }
+          100% { transform: translate(1px, -2px) rotate(-1deg); }
+        }
+
+        .ptext {
+          color: black;
+          text-align: center;
+          font-size: 14px;
+          font-family: "Poppins";
+          font-weight: 400;
+          word-spacing: initial;
+          width: initial;
+          height: initial;
+          padding-top: 0px;
+          padding-bottom: 0px;
+          padding-left: 5px;
+          padding-right: 5px;
+          margin-top: 1px;
+          margin-bottom: 1px;
+          margin-left: 1px;
+          margin-right: 1px;
+        }
+
+        .purchase {
+          background-color: red;
+          color: white;
+          border-radius: 25px;
+        }
+
+        .purchase:link {
+          text-decoration: none;
+          font-size: 21px;
+          font-family: "Poppins", Verdana, Tahoma;
+          font-weight: 400;
+          padding-top: 0.5px;
+          padding-bottom: 0.5px;
+          padding-left: 10px;
+          padding-right: 10px;
+          height: initial;
+          width: initial;
+          shape-rendering: optimizeSpeed;
+          animation: mymove 3s;
+          animation-delay: 0.5s;
+          animation-fill-mode: both;
+          position: relative;
+        }
+
+        @keyframes mymove {from {bottom: 100px; background-color: green;}}
+
+        .purchase:hover {
+          background-color: darkgreen;
+          color: black;
+          padding-top: 0.5px;
+          padding-bottom: 0.5px;
+          padding-left: 12px;
+          padding-right: 12px;
+        }
+
+        .show {
+          display: block;
+        }
+
+        footer {
+          background-color: #181818;
+          color: black;
+          text-align: center;
+          margin-top: 2px;
+          margin-bottom: 2px;
+          font-size: 16px;
+          font-family: "Poppins";
+          font-weight: 400;
+        }
+
+        #snifftegistl {
+          text-align: center;
+          display: inline-flex;
+        }
+
+        nav {
+          color: white;
+          background-color: #181818;
+          padding-top: 1%;
+          padding-bottom: 0px;
+          margin-top: 0%;
+          margin-bottom: 0%;
+          border-top-left-radius: 5px;
+          border-top-right-radius: 5px;
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+          text-align: center;
+          font-size: 16px;
+        }
+
+        nav b {
+          font-family: "Poppins";
+          font-size: 14px;
+          font-weight: 400;
+          text-align: center;
+        }
+
+        nav a.reaspon {
+          color: white;
+          background-color: #181818;
+          text-align: center;
+        }
+
+        nav a:link {
+          text-decoration: none;
+          text-align: center;
+          color: white;
+          font-size: 20px;
+          font-family: "Poppins";
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+
+        #chi {
+          font-size: 11px;
+          padding-top: 0%;
+          padding-bottom: 0px;
+          margin-top: 0%;
+          margin-bottom: 0%;
+        }
+        
+    </style>
+    <script>// Note that we are setting `SameSite=None;` in this example because the example
+      // needs to work cross-origin.
+      // It is more common not to set the `SameSite` attribute, which results in the default,
+      // and more secure, value of `SameSite=Lax;`
+      document.cookie = "name=snifftegist; SameSite=None; Secure";
+      document.cookie = "favorite_food=cookie; SameSite=None; Secure";
+      
+      function showCookies() {
+        const output = document.getElementById("cookies");
+        output.textContent = `> ${document.cookie}`;
+      }
+      
+      function clearOutputCookies() {
+        const output = document.getElementById("cookies");
+        output.textContent = "";
+      }
+      
+      // Note that we are setting `SameSite=None;` in this example because the example
+      // needs to work cross-origin.
+      // It is more common not to set the `SameSite` attribute, which results in the default,
+      // and more secure, value of `SameSite=Lax;`
+      document.cookie = "test1=Hello; SameSite=None; Secure";
+      document.cookie = "test2=Visitor; SameSite=None; Secure";
+      
+      const cookieValue = document.cookie
+        .split("; ")
+        .find((row) => row.startsWith("test2="))
+        ?.split("=")[1];
+      
+      function showCookieValue() {
+        const output = document.getElementById("cookie-value");
+        output.textContent = `> ${cookieValue}`;
+      }
+      
+      function clearOutputCookieValue() {
+        const output = document.getElementById("cookie-value");
+        output.textContent = "";
+      }
+      
+      function doOnce() {
+        if (
+          !document.cookie
+            .split("; ")
+            .find((row) => row.startsWith("doSomethingOnlyOnce"))
+        ) {
+
+          // Note that we are setting `SameSite=None;` in this example because the example
+          // needs to work cross-origin.
+          // It is more common not to set the `SameSite` attribute, which results in the default,
+          // and more secure, value of `SameSite=Lax;`
+          document.cookie =
+            "doSomethingOnlyOnce=true; expires=Tue, 31 Dec 2024 23:59:59 GMT; SameSite=None; Secure";
+      
+          const output = document.getElementById("do-once");
+          output.textContent = "> Do something here!";
+        }
+      }
+      
+      function clearOutputDoOnce() {
+        const output = document.getElementById("do-once");
+        output.textContent = "";
+      }
+      
+      function resetOnce() {
+        // Note that we are setting `SameSite=None;` in this example because the example
+        // needs to work cross-origin.
+        // It is more common not to set the `SameSite` attribute, which results in the default,
+        // and more secure, value of `SameSite=Lax;`
+        document.cookie =
+          "doSomethingOnlyOnce=; expires=Mon, 01 Jan 2024 00:00:00 GMT; SameSite=None; Secure";
+      
+        const output = document.getElementById("reset-once");
+        output.textContent = "> Reset!";
+      }
+      
+      function clearOutputResetOnce() {
+        const output = document.getElementById("reset-once");
+        output.textContent = "";
+      }
+      
+      // Note that we are setting `SameSite=None;` in this example because the example
+      // needs to work cross-origin.
+      // It is more common not to set the `SameSite` attribute, which results in the default,
+      // and more secure, value of `SameSite=Lax;`
+      document.cookie = "reader=1; SameSite=None; Secure";
+      
+      function checkACookieExists() {
+        if (
+          document.cookie.split(";").some((item) => item.trim().startsWith("reader="))
+        ) {
+          const output = document.getElementById("a-cookie-existence");
+          output.textContent = '> The cookie "reader" exists';
+        }
+      }
+      
+      function clearOutputACookieExists() {
+        const output = document.getElementById("a-cookie-existence");
+        output.textContent = "";
+      }
+      
+      function setCookie(cname, cvalue, exdays) {
+        const d = new Date();
+        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+        let expires = "expires="+d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+      }
+      
+      function getCookie(cname) {
+        let name = cname + "=";
+        let ca = document.cookie.split(';');
+        for(let i = 0; i < ca.length; i++) {
+          let c = ca[i];
+          while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+          }
+        }
+        return "";
+      }
+      
+      function checkCookie() {
+        let user = getCookie("username");
+        if (user != "") {
+          alert("Welcome back" + user);
+        } else {
+          user = prompt("Please enter your name:", "");
+          if (user != "" && user != "Drsniff") {
+            setCookie("username", user, 365);
+          }
+        }
+      }
+    </script>
+    <script src="service-worker.js"></script>
+  </head>
+    <body onload="Function()">
+      <header>
+        <div class="menu">
+            <span class="logo"><img id="VAMEZeal" title="VAMEZeal" src="NafiNEOLife 2.png" alt="NafiNEOLife 2.png" width="60" height="60"></span>
+            <span class="buttons"><a class="seeing" href="products">Office</a><a class="seeing" href="Office">Products</a><a class="seeing" href="#">Home</a></span>  
+        </div>
+      </header><br>
+      <input type="text/search" id="myInput" onkeydown="dFunction()" oninput="sFunction()" onkeyup="m1Function()" placeholder="Find something.." title="finder" size="25">
+      
+      <h2 id="koi">Welcome !</h2>
+
+      <!-- Control buttons -->
+      <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+        <button class="btn" onclick="filterSelection('animals')"> Animals</button>
+        <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
+        <button class="btn" onclick="filterSelection('colors')"> Colors</button>
+      </div>
+
+      <!-- The filterable elements. Note that some have multiple class names (this is because they belong to multiple categories) -->
+        <div class="container">
+          <ul id="myUL">
+            <li class="filterDiv cars"><b class="names">All Natural Fibre</b><br><h5 class="ptext">Rich in oat fibre, to particularly support heart health.</h5><br><img class="products" src="All Natural Fibre.png" alt="All Natural Fibre.png" width="244" height="264"><br><a class="purchase" href="https://snifftegist.com">Buy</a></li>
+            <li class="filterDiv colors fruits"><b class="names">Aloe Vera Plus Orange</b><br><h5 class="ptext">Sweetened with fructose for quick and sustained energy.</h5><br><img class="products" src="Aloe Vera Plus Orange.png" alt="Aloe Vera Plus Orange.png" width="244" height="264"><br><a class="purchase" href="https://snifftegist.com">Buy</a></li>
+            <li class="filterDiv cars"><b class="names">Ami Tone 90 Tablets</b><br><h5 class="ptext">Every kind of things that matter<br>Use Gold and Silver not papper</h5><br><img class="products" src="Ami Tone 90 Tablets.png" alt="Ami Tone 90 Tablets.png" width="244" height="264"><br><a class="purchase" href="https://snifftegist.com">Buy</a></li>
+            <li class="filterDiv cars"><b class="names">Betagard</b><br><h5 class="ptext">Every kind of things that matter<br>Use Gold and Silver not papper</h5><br><img class="products" src="Betagard.png" alt="Betagard.png" width="244%" height="264"><br><a class="purchase" href="https://snifftegist.com">Buy</a></li>
+            <li class="filterDiv colors"><b class="names">Botanical Healthy Balance</b><br><h5 class="ptext">Every kind of things that matter<br>Use Gold and Silver not papper</h5><br><img class="products" src="Botanical Healthy Balance.png" alt="Botanical Healthy Balance.png" width="244" height="264"><br><a class="purchase" href="https://snifftegist.com">Buy</a></li>
+            <li class="filterDiv animals"><b class="names">Chelated Zinc 100 Tablets</b><br><h5 class="ptext">Every kind of things that matter<br>Use Gold and Silver not papper</h5><br><img class="products" src="Chelated Zinc - 100 Tablets.png" alt="Chelated Zinc - 100 Tablets.png" width="244" height="264"><br><a class="purchase" href="https://snifftegist.com">Buy</a></li>
+            <li class="filterDiv fruits"><b class="names">Chewable All-C 90 Tablets</b><br><h5 class="ptext">Every kind of things that matter<br>Use Gold and Silver not papper</h5><br><img class="products" src="Chewable All-C - 90 Tablets.png" alt="Chewable All-C - 90 Tablets.png" width="244" height="264"><br><a class="purchase" href="https://snifftegist.com">Buy</a></li>
+            <li class="filterDiv fruits"><b class="names">Cruciferous Plus 60 Tablets</b><br><h5 class="ptext">Every kind of things that matter<br>Use Gold and Silver not papper</h5><br><img class="products" src="Cruciferous Plus.png" alt="Cruciferous Plus.png" width="244" height="264"><br><a class="purchase" href="https://snifftegist.com">Buy</a></li> 
+            <li class="filterDiv animals"><b class="names">Garlic Allium Complex</b><br><h5 class="ptext">Every kind of things that matter<br>Use Gold and Silver not papper</h5><br><img class="products" src="Garlic Allium Complex.png" alt="Garlic Allium Complex.png" width="244" height="264"><br><a class="purchase" href="https://snifftegist.com">Buy</a></li>
+            <li class="filterDiv animals"><b class="names">Fibre Tablets 120 Tablets</b><br><h5 class="ptext">Every kind of things that matter<br>Use Gold and Silver not papper</h5><br><img class="products" src="Fibre Tablets - 120 Tablets.png" alt="Fibre Tablets - 120 Tablets.png" width="244" height="264"><br><a class="purchase" href="https://snifftegist.com">Buy</a></li><br>
+            <br>
+            <li class="filterDiv colors fruits"><b class="names">Formula IV Plus 30 Sachets</b><br><h5 class="ptext">Every kind of things that matter<br>Use Gold and Silver not papper</h5><br><img class="products" src="Formula IV Plus - 30 Sachets.png" alt="Formula IV Plus - 30 Sachets.png" width="244" height="264"><br><a class="purchase" href="https://snifftegist.com">Buy</a></li>
+            <li class="filterDiv cars"><b class="names">Formula IV Plus 60 Sachets</b><br><h5 class="ptext">Every kind of things that matter<br>Use Gold and Silver not papper</h5><br><img class="products" src="Formula IV Plus - 60 Sachets.png" alt="Formula IV Plus - 60 Sachets.png" width="244" height="264"><br><a class="purchase" href="https://snifftegist.com">Buy</a></li>
+            <li class="filterDiv cars"><b class="names">Full Motion 90 Tablets</b><br><h5 class="ptext">Every kind of things that matter<br>Use Gold and Silver not papper</h5><br><img class="products" src="Full Motion - 90 Tablets.png" alt="Full Motion - 90 Tablets.png" width="244" height="264"><br><a class="purchase" href="https://snifftegist.com">Buy</a></li>
+            <li class="filterDiv colors"><b class="names">Super 10 Fragranced 1 litre</b><br><h5 class="ptext">Every kind of things that matter<br>Use Gold and Silver not papper</h5><br><img class="products" src="Super 10 Fragranced - 1 litre.png" alt="Super 10 Fragranced - 1 litre.png" width="244" height="264"><br><a class="purchase" href="https://snifftegist.com">Buy</a></li>
+            <li class="filterDiv cars"><b class="names">Super Gro 1 litre</b><br><h5 class="ptext">Every kind of things that matter<br>Use Gold and Silver not papper</h5><br><img class="products" src="Super Gro - 1 Litre Single.png" alt="Super Gro - 1 Litre Single.png" width="244" height="264"><br><a class="purchase" href="https://snifftegist.com">Buy</a></li>
+            <li class="filterDiv colors"><b class="names">Super Gro 5 litre</b><br><h5 class="ptext">Every kind of things that matter<br>Use Gold and Silver not papper</h5><br><img class="products" src="Super Gro - 5 litre.png" alt="Super Gro - 5 litre.png" width="244" height="264"><br><a class="purchase" href="https://snifftegist.com">Buy</a></li>
+            <li class="filterDiv animals"><b class="names">Light Duty Cleaner LDC 1 Litre</b><br><h5 class="ptext">Every kind of things that matter<br>Use Gold and Silver not papper</h5><br><img class="products" src="Light Duty Cleaner LDC 1 Litre.png" alt="Light Duty Cleaner LDC 1 Litre.png" width="244" height="264"><br><a class="purchase" href="https://snifftegist.com">Buy</a></li>
+            <li class="filterDiv fruits animals"><b class="names">NeoLifeTea 15 Sticks Single</b><br><h5 class="ptext">Every kind of things that matter<br>Use Gold and Silver not papper</h5><br><img class="products" src="NeoLifeTea 15 Sticks Single.png" alt="NeoLifeTea 15 Sticks Single.png" width="244" height="264"><br><a class="purchase" href="https://snifftegist.com">Buy</a></li>  
+            <li class="filterDiv fruits"><b class="names">Smart 8 60 Capsules Single</b><br><h5 class="ptext">Every kind of things that matter<br>Use Gold and Silver not papper</h5><br><img class="products" src="Smart 8 - 60 Capsules Single.png" alt="Smart 8 - 60 Capsules Single.png" width="244" height="264"><br><a class="purchase" href="https://snifftegist.com">Buy</a></li>
+            <li class="filterDiv animals"><b class="names">Pro Vitality 30 Sachets</b><br><h5 class="ptext">Every kind of things that matter<br>Use Gold and Silver not papper</h5><br><img class="products" src="Pro Vitality - 30 Sachets.png" alt="Pro Vitality - 30 Sachets.png" width="244" height="264"><br><a class="purchase" href="https://snifftegist.com">Buy</a></li>
+            <br>
+            <li class="filterDiv cars"><b class="names">Tre-en-en® 60 capsules</b><br><h5 class="ptext">Every kind of things that matter<br>Use Gold and Silver not papper</h5><br><img class="products" src="Tre-en-en® - 60 capsules.png" alt="Tre-en-en® - 60 capsules.png" width="244" height="264"><br><a class="purchase" href="https://snifftegist.com">Buy</a></li>
+            <li class="filterDiv colors"><b class="names">Tre-en-en® 120 capsules</b><br><h5 class="ptext">Every kind of things that matter<br>Use Gold and Silver not papper</h5><br><img class="products" src="Tre-en-en® - 120 Capsules.png" alt="Tre-en-en® - 120 Capsules.png" width="244" height="264"><br><a class="purchase" href="https://snifftegist.com">Buy</a></li>
+            <li class="filterDiv animals"><b class="names">Vita Guard 120 Tablets</b><br><h5 class="ptext">Every kind of things that matter<br>Use Gold and Silver not papper</h5><br><img class="products" src="Vita Guard - 120 Tablets.png" alt="Vita Guard - 120 Tablets.png" width="244" height="264"><br><a class="purchase" href="https://snifftegist.com">Buy</a></li>
+            <li class="filterDiv animals"><b class="names">Vita Squares 180 Tablets</b><br><h5 class="ptext">Every kind of things that matter<br>Use Gold and Silver not papper</h5><br><img class="products" src="Vita Squares - 180 Tablets.png" alt="Vita Squares - 180 Tablets.png" width="244" height="264"><br><a class="purchase" href="https://snifftegist.com">Buy</a></li>
+          </ul>
+        </div><br>
+
+
+          <div id="middle">
+            <div id="container2">
+              <li class="filterDiv fruits"><b class="names">Vitamin B Complex Sustained Release 60 Tablets</b><br><h5 class="ptext">Every kind of things that matter<br>Use Gold and Silver not papper</h5><br><img class="products" src="Vitamin B Complex Sustained Release - 60 Tablets.png" alt="Vitamin B Complex Sustained Release - 60 Tablets.png" width="240" height="260"><br><a class="purchase" href="https://snifftegist.com">Buy</a></li>
+              <li class="filterDiv fruits"><b class="names">Poverty Solution And Mentality Fixing</b><br><h5 class="ptext">Every kind of things that matter<br>Use Gold and Silver not papper</h5><br><img class="products" src="All Natural Fibre.png" alt="All Natural Fibre.png" width="240" height="260"><br><a class="purchase" href="https://snifftegist.com">Buy</a></li>
+            </div>
+          </div><br>
+
+        <div class="container">
+        <ul id="myUL2">
+          <li class="filterDiv cars"><b class="names">Carotenoid Complex 30 Capsules</b><br><h5 class="ptext">Every kind of things that matter<br>Use Gold and Silver not papper</h5><br><img class="products" src="Carotenoid Complex - 30 Capsules.png" alt="Carotenoid Complex - 30 Capsules.png" width="244" height="264"><br><a class="purchase" href="https://snifftegist.com">Buy</a></li>
+          <li class="filterDiv colors"><b class="names">Carotenoid Complex 90 Capsules Single</b><br><h5 class="ptext">Every kind of things that matter<br>Use Gold and Silver not papper</h5><br><img class="products" src="Carotenoid Complex 90 Capsules Single.png" alt="Carotenoid Complex 90 Capsules Single.png" width="244" height="264"><br><a class="purchase" href="https://snifftegist.com">Buy</a></li>
+          <li class="filterDiv animals"><b class="names">Chelated Cal Mag with 500 IU Vitamin D3 90 Tablets</b><br><h5 class="ptext">Every kind of things that matter<br>Use Gold and Silver not papper</h5><br><img class="products" src="Chelated Cal Mag with 500 IU Vitamin D3 90 Tablets.png" alt="Chelated Cal Mag with 500 IU Vitamin D3 90 Tablets.png" width="244" height="264"><br><a class="purchase" href="https://snifftegist.com">Buy</a></li>
+          <li class="filterDiv fruits animals"><b class="names">CoQ10 Mitochondrial Energy Complex</b><br><h5 class="ptext">Every kind of things that matter<br>Use Gold and Silver not papper</h5><br><img class="products" src="CoQ10 Mitochondrial Energy Complex.png" alt="CoQ10 Mitochondrial Energy Complex.png" width="244" height="264"><br><a class="purchase" href="https://snifftegist.com">Buy</a></li>
+          <li class="filterDiv fruits"><b class="names">Feminine Herbal Complex 60 Tablets</b><br><h5 class="ptext">Every kind of things that matter<br>Use Gold and Silver not papper</h5><br><img class="products" src="Feminine Herbal Complex - 60 Tablets.png" alt="Feminine Herbal Complex - 60 Tablets.png" width="244" height="264"><br><a class="purchase" href="https://snifftegist.com">Buy</a></li>
+          <li class="filterDiv cars"><b class="names">Flavonoid Complex 60 Tablets</b><br><h5 class="ptext">Every kind of things that matter<br>Use Gold and Silver not papper</h5><br><img class="products" src="Flavonoid Complex - 60 Tablets.png" alt="Flavonoid Complex - 60 Tablets.png" width="244" height="264"><br><a class="purchase" href="https://snifftegist.com">Buy</a></li>
+          <li class="filterDiv animals"><b class="names">Lipotropic Adjunct 90 Tablets</b><br><h5 class="ptext">Every kind of things that matter<br>Use Gold and Silver not papper</h5><br><img class="products" src="Lipotropic Adjunct 90 Tablets.png" alt="Lipotropic Adjunct 90 Tablets.png" width="244" height="264"><br><a class="purchase" href="https://snifftegist.com">Buy</a></li>
+          <li class="filterDiv fruits"><b class="names">Masculine Herbal Complex 60 Tablets</b><br><h5 class="ptext">Every kind of things that matter<br>Use Gold and Silver not papper</h5><br><img class="products" src="Masculine Herbal Complex - 60 Tablets.png" alt="Masculine Herbal Complex - 60 Tablets.png" width="244" height="264"><br><a class="purchase" href="https://snifftegist.com">Buy</a></li>
+          <li class="filterDiv fruits"><b class="names">Omega 3 Salmon Oil Plus 90 Capsules</b><br><h5 class="ptext">Every kind of things that matter<br>Use Gold and Silver not papper</h5><br><img class="products" src="Omega 3 Salmon Oil Plus 90 Capsules.png" alt="Omega 3 Salmon Oil Plus 90 Capsules.png" width="244" height="264"><br><a class="purchase" href="https://snifftegist.com">Buy</a></li>
+          <li class="filterDiv animals"><b class="names">PhytoDefence 30 Sachets Single</b><br><h5 class="ptext">Every kind of things that matter<br>Use Gold and Silver not papper</h5><br><img class="products" src="PhytoDefence 30 Sachets Single.png" alt="PhytoDefence 30 Sachets Single.png" width="244" height="264"><br><a class="purchase" href="https://snifftegist.com">Buy</a></li>
+          <br>
+          <li class="filterDiv fruits animals"><b class="names">Vitamin C Sustained Release 100 Tablets</b><br><h5 class="ptext">Every kind of things that matter<br>Use Gold and Silver not papper</h5><br><img class="products" src="Vitamin C Sustained Release - 100 Tablets.png" alt="Vitamin C Sustained Release - 100 Tablets.png" width="244" height="264"><br><a class="purchase" href="https://snifftegist.com">Buy</a></li>
+          <li class="filterDiv fruits"><b class="names">Vitamin E 200 IU 60 Capsules</b><br><h5 class="ptext">Every kind of things that matter<br>Use Gold and Silver not papper</h5><br><img class="products" src="Vitamin E 200 IU - 60 Capsules.png" alt="Vitamin E 200 IU - 60 Capsules.png" width="244" height="264"><br><a class="purchase" href="https://snifftegist.com">Buy</a></li>
+          <li class="filterDiv fruits"><b class="names">Wheat Germ Oil 60 Capsules Single</b><br><h5 class="ptext">Every kind of things that matter<br>Use Gold and Silver not papper</h5><br><img class="products" src="Wheat Germ Oil - 60 Capsules Single.png" alt="Wheat Germ Oil - 60 Capsules Single.png" width="244" height="264"><br><a class="purchase" href="https://snifftegist.com">Buy</a></li>
+        </ul>
+        </div>
+
+        <script>
+          function m1Function() {
+              var input, filter, div, ul, li, b, i, txtValue;
+              input = document.getElementById("myInput");
+              filter = input.value.toLowerCase();
+              div = document.getElementsByClassName ("filterDiv")
+              ul = document.getElementById("myUL");
+              li = ul.getElementsByTagName("li");
+              for (i = 0; i < li.length; i++) {
+                  b = li[i].getElementsByTagName("b")[0];
+                  txtValue = b.textContent || b.innerText;
+                  if (txtValue.toLowerCase().indexOf(filter) > -1) {
+                      li[i].style.display = "";
+                  } else {
+                      li[i].style.display = "none";
+                    }
+                  }
+                }
+                </script>
+
+        <script>
+          function sFunction() {
+              var input, filter, div, li, b, i, txtValue;
+              input = document.getElementById("myInput");
+              filter = input.value.toUpperCase();
+              div = document.getElementsByClassName ("filterDiv")
+              div = document.getElementById("container2");
+              li = div.getElementsByTagName("li");
+              for (i = 0; i < li.length; i++) {
+                  b = li[i].getElementsByTagName("b")[0];
+                  txtValue = b.textContent || b.innerText;
+                  if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                      li[i].style.display = "";
+                  } else {
+                      li[i].style.display = "none";
+                    }
+                  }
+                }
+                </script>
+
+        <script>
+          function dFunction() {
+              var input, filter, div, ul, li, b, i, txtValue;
+              input = document.getElementById("myInput");
+              filter = input.value.toUpperCase();
+              div = document.getElementsByClassName ("filterDiv")
+              ul = document.getElementById("myUL2");
+              li = ul.getElementsByTagName("li");
+              for (i = 0; i < li.length; i++) {
+                  b = li[i].getElementsByTagName("b")[0];
+                  txtValue = b.textContent || b.innerText;
+                  if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                      li[i].style.display = "";
+                  } else {
+                      li[i].style.display = "none";
+                    }
+                  }
+                }
+                </script>
+
+        <script>
+          filterSelection("all")
+          function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("filterDiv");
+            if (c == "all") c = "";
+            // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+            for (i = 0; i < x.length; i++) {
+              sRemoveClass(x[i], "show");
+              if (x[i].className.indexOf(c) > -1) sAddClass(x[i], "show");
+            }
+          }
+          
+          // Show filtered elements
+          function sAddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+              if (arr1.indexOf(arr2[i]) == -1) {
+                element.className += " " + arr2[i];
+              }
+            }
+          }
+          
+          // Hide elements that are not selected
+          function sRemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+              while (arr1.indexOf(arr2[i]) > -1) {
+                arr1.splice(arr1.indexOf(arr2[i]), 1);
+              }
+            }
+            element.className = arr1.join(" ");
+          }
+          
+          // Add active class to the current control button (highlight it)
+          var btnContainer = document.getElementById("myBtnContainer");
+          var btns = btnContainer.getElementsByClassName("btn");
+          for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+              var current = document.getElementsByClassName("active");
+              current[0].className = current[0].className.replace(" active", "");
+              this.className += " active";
+            });
+          }
+        </script>
+    </body><br><li id="snifftegistl"><img src="Snifftegist Logo 5.png" alt="Snifftegist Logo 5.png" width="25" height="25">Made By SniffTegist</li><br>
+<footer>
+  <nav>
+    <b id="license" title="license" href="license.html">(c) 2022 Sample Market</b><br><br>
+      <a class="reason" href="https://www.youtube.com/channel/UCxozb09Z7aaFjW1o4iOSrLA">
+        <img title="youtube" src="YouTube-Logo AA.png" alt="YouTube-Logo AA.png" width="30" height="30" /></a>
+      <a title="whatsapp" href="https://www.whatsapp.com">
+        <img title="whatsapp" src="Enbe Whats'App Logo.png" alt="Enbe Whats'App Logo.png" width="30" height="30" /></a>
+        <a title="call" href="call:+2348166049252">
+          <img title="call" src="SniffTegist Telephone2.png" alt="SniffTegist Telephone.png" width="30" height="30" /></a><br>
+  </nav><br>
+  <p id="chi"></p>
+  <script>
+      function Function() {
+        var txt;
+        if (confirm("Sample use google ads to serve contents!")) { txt = "You consent"; }
+        else { txt = "You refused"; }
+  
+        document.getElementById("chi").innerHTML = txt;
+      }
+      </script>
+</footer>
+</html>
